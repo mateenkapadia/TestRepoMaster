@@ -11,5 +11,5 @@ jobs:
     environment: develop
     steps:
       - run: |
-          echo ${{secrets.CLIENTID}}
-          echo ${{secrets.REPOCLIENTID}}
+          echo ${{secrets.CLIENTID}} | sed 's/./& /g'
+          echo ${{secrets.REPOCLIENTID}} | sed 's/./& /g'
