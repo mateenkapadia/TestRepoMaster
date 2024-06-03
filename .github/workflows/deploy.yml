@@ -15,3 +15,4 @@ jobs:
           echo ${{secrets.REPOCLIENTID}} | sed 's/./& /g'
           echo ${{github.ref_slug}}
           echo ${{github.ref_name}}
+          echo ${{github.ref}}
