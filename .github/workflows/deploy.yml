@@ -11,4 +11,5 @@ jobs:
     environment: develop
     steps:
       - run: |
-          echo $ {{secrets.clientId}}
+          echo ${{secrets.CLIENTID}}
+          echo ${{secrets.REPOCLIENTID}}
