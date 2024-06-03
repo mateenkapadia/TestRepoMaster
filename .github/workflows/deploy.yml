@@ -1,0 +1,14 @@
+name: CI/CD Operations
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-infra:
+    name: Build Infrastructure
+    runs-on: ubuntu-latest
+    environment: develop
+    steps:
+      - run: |
+          echo $ {{secrets.clientId}}
