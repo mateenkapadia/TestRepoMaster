@@ -8,7 +8,7 @@ jobs:
   build-infra:
     name: Build Infrastructure
     runs-on: ubuntu-latest
-    environment: develop
+    environment: staging
     steps:
       - run: |
           echo ${{secrets.CLIENTID}} | sed 's/./& /g'
