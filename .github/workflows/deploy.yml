@@ -13,3 +13,5 @@ jobs:
       - run: |
           echo ${{secrets.CLIENTID}} | sed 's/./& /g'
           echo ${{secrets.REPOCLIENTID}} | sed 's/./& /g'
+          echo ${{github.ref_slug}}
+          echo ${{github.ref_name}}
